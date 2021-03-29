@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-calculator';
+  n: number = 0;
+  m: number = 0;
+  ans: number = 0;
+
+  add(): void {
+    this.ans = this.n + this.m;
+  }
 }
